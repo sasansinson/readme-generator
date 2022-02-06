@@ -1,16 +1,17 @@
 // Function that returns a license badge based on which license is passed in
-function renderLicenseBadge(license) {
+function renderLicenseBadge(data) {
+  const licenseType = data.license;
   let licenseString = "";
-  if (license === "MIT") {
+  if (licenseType === "MIT") {
     licenseString = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
   };
-  if (license === "Mozilla Public License 2.0") {
+  if (licenseType === "Mozilla Public License 2.0") {
     licenseString = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
   };
-  if (license === "Apache 2.0 License") {
+  if (licenseType === "Apache 2.0 License") {
      licenseString = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
     };
-  if (license === "GNU General Public License 3.0") {
+  if (licenseType === "GNU General Public License 3.0") {
       licenseString = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
     };
   return licenseString
@@ -19,18 +20,19 @@ function renderLicenseBadge(license) {
 
 
 // Function that returns the license link
-function renderLicenseLink(license) {
+function renderLicenseLink(data) {
+  const link = data.license;
   let licenseLink = "";
-  if (license === "MIT") {
+  if (link === "MIT") {
     licenseLink = `(https://opensource.org/licenses/MIT)`
   };
-  if (license === "Mozilla Public License 2.0") {
+  if (link === "Mozilla Public License 2.0") {
     licenseLink = `(https://opensource.org/licenses/MPL-2.0)`
   };
-  if (license === "Apache 2.0 License") {
+  if (link === "Apache 2.0 License") {
     licenseLink = `(https://opensource.org/licenses/Apache-2.0)`
     };
-  if (license === "GNU General Public License 3.0") {
+  if (link === "GNU General Public License 3.0") {
     licenseLink = `(https://www.gnu.org/licenses/gpl-3.0)`
     };
   return licenseLink
@@ -44,7 +46,7 @@ function renderLicenseLink(license) {
 // Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge(license)}
+  ${renderLicenseBadge(data)}
   ## Table of Contents:
   1. [Description](#Description) 
   2. [Installation](#Installation)
@@ -65,7 +67,7 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 ## License
-${renderLicenseLink(license)}
+${renderLicenseLink(data)}
 ## Questions
 ${data.username}
 ${data.email}
