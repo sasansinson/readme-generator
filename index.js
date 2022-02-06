@@ -79,8 +79,9 @@ const questions = [
 function init() {
     inquirer.prompt(questions)
     .then((response) => {
-        return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response));
-    });
+        return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response))
+    });   
 }
+
 
 init();
