@@ -15,6 +15,7 @@ An automated README.md generator that uses the Inquirer NPM, File System (FS), a
 The README generator requires installation of Node.js. Users must also have access to a IDE such as Visual Studio Code with access to the terminal or access to GitBash/Command Line Interface to run Node. Inquirer npm must also be installed.
 ## Usage
 To use the README generator run: "Node index.js" in the terminal, and answer the prompts. After the prompts are answered, open the new README.md created in the current working directory, and preview the README (hit CTRL + Shift + V to preview in Visual Studio Code).
+[DEMO Video](https://drive.google.com/file/d/1NumSPpd_VgtKH6d8S6dcg9CMH8UidFSS/view?usp=sharing)
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Tests
