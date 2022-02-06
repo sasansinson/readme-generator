@@ -1,5 +1,5 @@
-# readme generator
-  
+# readme
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents:
   1. [Description](#Description) 
   2. [Installation](#Installation)
@@ -14,13 +14,13 @@ later
 ## Installation
 later
 ## Usage
-use it
+later
 ## Contributing
-pull request
+later
 ## Tests
-test it
+later
 ## License
 
 ## Questions
-sasansinson
-sasan_2002@yahoo.com
+sasan
+sasan@yahoo.com
